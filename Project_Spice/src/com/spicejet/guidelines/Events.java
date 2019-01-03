@@ -38,6 +38,7 @@ public class Events {
 			}else {
 				System.out.println("FAIL: Webelement "+clickelem.toString()+" is not enabled to click");
 			}
+			
 		}else {
 			System.out.println("FAIL: WebElement "+clickelem.toString()+" is not displayed in the UI");
 		}
