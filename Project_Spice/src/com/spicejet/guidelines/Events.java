@@ -1,5 +1,6 @@
 package com.spicejet.guidelines;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 
@@ -23,6 +24,24 @@ public class Events {
 		}else {
 			System.out.println("Fail: WebElement "+textElement.toString() +" is not displayed");
 		}
+	}
+	/**
+	 * @author rayap
+	 * @param elem
+	 * This method is used to click a Webelement provided with By type Input
+	 */
+	public static void ClickElem(By elem) {
+		WebElement clickelem=Data.driver.findElement(elem);
+		if(clickelem.isDisplayed()) {
+			if(clickelem.isEnabled()) {
+		clickelem.click();
+			}else {
+				System.out.println("FAIL: Webelement "+clickelem.toString()+" is not enabled to click");
+			}
+		}else {
+			System.out.println("FAIL: WebElement "+clickelem.toString()+" is not displayed in the UI");
+		}
+		
 	}
 
 }
