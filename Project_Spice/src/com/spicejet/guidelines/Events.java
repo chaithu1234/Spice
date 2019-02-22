@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 
 public class Events {
-	
+	// Event class 
 	
 	/**
 	 * @author rayap
